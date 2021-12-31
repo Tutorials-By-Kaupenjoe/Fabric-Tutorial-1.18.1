@@ -1,9 +1,11 @@
 {
   "item.tutorialmod.mythril_ingot": "Mythril Ingot",
   "item.tutorialmod.mythril_nugget": "Mythril Nugget",
-
+  "item.tutorialmod.raw_mythril": "Raw Mythril",
 
   "block.tutorialmod.mythril_block": "Mythril Block",
-  "block.tutorialmod.mythril_ore": "Mythril Ore"
-
+  "block.tutorialmod.mythril_ore": "Mythril Ore",
+  "block.tutorialmod.raw_mythril_block": "Raw Mythril Block",
+  "block.tutorialmod.deepslate_mythril_ore": "Deepslate Mythril Ore",
+  "block.tutorialmod.netherrack_mythril_ore": "Netherrack Mythril Ore"
 }
