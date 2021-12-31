@@ -7,5 +7,8 @@
   "block.tutorialmod.mythril_ore": "Mythril Ore",
   "block.tutorialmod.raw_mythril_block": "Raw Mythril Block",
   "block.tutorialmod.deepslate_mythril_ore": "Deepslate Mythril Ore",
-  "block.tutorialmod.netherrack_mythril_ore": "Netherrack Mythril Ore"
+  "block.tutorialmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
+
+  "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab"
+
 }
