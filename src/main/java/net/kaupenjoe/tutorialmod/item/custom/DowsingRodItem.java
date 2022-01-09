@@ -1,5 +1,6 @@
 package net.kaupenjoe.tutorialmod.item.custom;
 
+import net.kaupenjoe.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -66,7 +67,6 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+        return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);
     }
 }
