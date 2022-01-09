@@ -6,6 +6,12 @@
   "item.tutorialmod.lilac_flower_bulb": "Lilac Flower Bulb",
   "item.tutorialmod.grape": "Grape",
 
+  "item.tutorialmod.mythril_pickaxe": "Mythril Pickaxe",
+  "item.tutorialmod.mythril_axe": "Mythril Axe",
+  "item.tutorialmod.mythril_shovel": "Mythril Shovel",
+  "item.tutorialmod.mythril_hoe": "Mythril Hoe",
+  "item.tutorialmod.mythril_sword": "Mythril Sword",
+
   "block.tutorialmod.mythril_block": "Mythril Block",
   "block.tutorialmod.mythril_ore": "Mythril Ore",
   "block.tutorialmod.raw_mythril_block": "Raw Mythril Block",
