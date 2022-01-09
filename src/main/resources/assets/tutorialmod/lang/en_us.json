@@ -15,6 +15,9 @@
 
   "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
 
-  "item.tutorialmod.dowsing_rod.no_valuables": "No Valuables Found!"
+  "item.tutorialmod.dowsing_rod.no_valuables": "No Valuables Found!",
+  "item.tutorialmod.dowsing_rod.tooltip.shift": "Right Click to find valuables",
+  "item.tutorialmod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
 
+  "tooltip.tutorialmod.mythril_block": "A Magical Block"
 }
