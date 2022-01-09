@@ -19,6 +19,11 @@
   "block.tutorialmod.mythril_wall": "Mythril Wall",
   "block.tutorialmod.mythril_fence_gate": "Mythril Fence Gate",
 
+  "block.tutorialmod.kaupen_door": "Kaupen Door",
+  "block.tutorialmod.kaupen_trapdoor": "Kaupen Trapdoor",
+  "block.tutorialmod.mythril_slab": "Mythril Slab",
+  "block.tutorialmod.mythril_stairs": "Mythril Stairs",
+
 
   "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
 

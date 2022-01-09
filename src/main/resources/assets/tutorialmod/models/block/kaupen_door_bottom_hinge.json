@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "tutorialmod:block/kaupen_door_top",
+    "bottom": "tutorialmod:block/kaupen_door_bottom"
+  }
+}

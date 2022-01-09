@@ -3,9 +3,7 @@ package net.kaupenjoe.tutorialmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.block.custom.ModPressurePlateBlock;
-import net.kaupenjoe.tutorialmod.block.custom.ModStoneButtonBlock;
-import net.kaupenjoe.tutorialmod.block.custom.SpeedyBlock;
+import net.kaupenjoe.tutorialmod.block.custom.*;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
@@ -60,6 +58,22 @@ public class ModBlocks {
 
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs",
+            new ModStairsBlock(ModBlocks.MYTHRIL_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
+
+    public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
 
 
 
