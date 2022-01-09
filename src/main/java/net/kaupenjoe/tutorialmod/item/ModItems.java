@@ -2,10 +2,7 @@ package net.kaupenjoe.tutorialmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.item.custom.DowsingRodItem;
-import net.kaupenjoe.tutorialmod.item.custom.ModAxeItem;
-import net.kaupenjoe.tutorialmod.item.custom.ModHoeItem;
-import net.kaupenjoe.tutorialmod.item.custom.ModPickaxeItem;
+import net.kaupenjoe.tutorialmod.item.custom.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -33,7 +30,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).food(ModFoodComponents.GRAPE)));
 
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
-            new SwordItem(ModToolMaterials.MYTHRIL, 1, 2f,
+            new ModSlownessSwordItem(ModToolMaterials.MYTHRIL, 1, 2f,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
             new ModAxeItem(ModToolMaterials.MYTHRIL, 3, 1f,
