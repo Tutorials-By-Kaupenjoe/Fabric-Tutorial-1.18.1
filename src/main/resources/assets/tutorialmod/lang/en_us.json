@@ -13,6 +13,13 @@
   "block.tutorialmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
   "block.tutorialmod.speedy_block": "Speedy Block",
 
+  "block.tutorialmod.mythril_button": "Mythril Button",
+  "block.tutorialmod.mythril_pressure_plate": "Mythril Pressure Plate",
+  "block.tutorialmod.mythril_fence": "Mythril Fence",
+  "block.tutorialmod.mythril_wall": "Mythril Wall",
+  "block.tutorialmod.mythril_fence_gate": "Mythril Fence Gate",
+
+
   "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
 
   "item.tutorialmod.dowsing_rod.no_valuables": "No Valuables Found!",

@@ -3,10 +3,11 @@ package net.kaupenjoe.tutorialmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.block.custom.ModPressurePlateBlock;
+import net.kaupenjoe.tutorialmod.block.custom.ModStoneButtonBlock;
 import net.kaupenjoe.tutorialmod.block.custom.SpeedyBlock;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -40,6 +41,26 @@ public class ModBlocks {
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL)
+                    .strength(4.0f).requiresTool().noCollision()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL)
+                    .strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
