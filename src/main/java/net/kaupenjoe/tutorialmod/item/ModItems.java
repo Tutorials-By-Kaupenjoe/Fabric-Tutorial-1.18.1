@@ -48,7 +48,7 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
     public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,
