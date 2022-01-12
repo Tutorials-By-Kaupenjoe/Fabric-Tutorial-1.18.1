@@ -3,6 +3,8 @@ package net.kaupenjoe.tutorialmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.item.custom.*;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -43,6 +45,19 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_PICKAXE = registerItem("mythril_pickaxe",
             new ModPickaxeItem(ModToolMaterials.MYTHRIL, 1, 0f,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+
+    public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
 
