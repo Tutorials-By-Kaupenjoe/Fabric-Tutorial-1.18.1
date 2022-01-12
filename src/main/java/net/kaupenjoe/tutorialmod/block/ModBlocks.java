@@ -81,6 +81,10 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12,
                     FabricBlockSettings.copy(Blocks.DANDELION).strength(4.0f).nonOpaque()), ModItemGroup.MYTHRIL);
 
+    public static final Block POTTED_LILAC_FLOWER = registerBlockWithoutBlockItem("potted_lilac_flower",
+            new FlowerPotBlock(ModBlocks.LILAC_FLOWER,
+                    FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.MYTHRIL);
+
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
@@ -98,6 +102,9 @@ public class ModBlocks {
             });
     }
 
+    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registry.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
