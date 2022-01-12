@@ -7,6 +7,7 @@ import net.kaupenjoe.tutorialmod.block.custom.*;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -74,6 +75,11 @@ public class ModBlocks {
     public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
                     .strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block LILAC_FLOWER = registerBlock("lilac_flower",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12,
+                    FabricBlockSettings.copy(Blocks.DANDELION).strength(4.0f).nonOpaque()), ModItemGroup.MYTHRIL);
 
 
 
