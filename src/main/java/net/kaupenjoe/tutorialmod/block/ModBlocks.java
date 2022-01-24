@@ -85,6 +85,11 @@ public class ModBlocks {
             new FlowerPotBlock(ModBlocks.LILAC_FLOWER,
                     FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.MYTHRIL);
 
+    public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
+            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL)
+                    .strength(4.0f).requiresTool()
+                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL);
+
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {

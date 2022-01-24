@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "tutorialmod:block/mythril_lamp_off" },
+    "clicked=true": { "model": "tutorialmod:block/mythril_lamp_on" }
+  }
+}
