@@ -63,6 +63,9 @@ public class ModItems {
     public static final Item MAGIC_MYTHRIL_DUST = registerItem("magic_mythril_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
+
 
 
     private static Item registerItem(String name, Item item) {
