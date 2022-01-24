@@ -91,6 +91,9 @@ public class ModBlocks {
                     .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL);
 
 
+    public static final Block WINTER_WINDOW = registerBlock("winter_window",
+            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroup.MYTHRIL);
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);
