@@ -19,6 +19,7 @@
 
   "item.tutorialmod.magic_mythril_dust": "Magic Mythril Dust",
   "item.tutorialmod.data_tablet": "Data Tablet",
+  "item.tutorialmod.grape_seeds": "Grape Seeds",
 
   "block.tutorialmod.lilac_flower": "Lilac Flower",
   "block.tutorialmod.potted_lilac_flower": "Potted Lilac Flower",
@@ -43,6 +44,7 @@
 
   "block.tutorialmod.mythril_lamp": "Mythril Lamp",
   "block.tutorialmod.winter_window": "Winter Window",
+  "block.tutorialmod.grape_vine": "Grape Vine",
 
   "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
 

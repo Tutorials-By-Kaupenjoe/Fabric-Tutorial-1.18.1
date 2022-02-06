@@ -94,6 +94,11 @@ public class ModBlocks {
     public static final Block WINTER_WINDOW = registerBlock("winter_window",
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroup.MYTHRIL);
 
+    public static final Block GRAPE_VINE = registerBlockWithoutBlockItem("grape_vine",
+            new GrapeVineBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()), ModItemGroup.MYTHRIL);
+
+
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);

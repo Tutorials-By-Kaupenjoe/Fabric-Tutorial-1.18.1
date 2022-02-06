@@ -2,12 +2,10 @@ package net.kaupenjoe.tutorialmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.item.custom.*;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -65,6 +63,9 @@ public class ModItems {
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
+
+    public static final Item GRAPE_SEEDS = registerItem("grape_seeds",
+            new AliasedBlockItem(ModBlocks.GRAPE_VINE, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
 
 
