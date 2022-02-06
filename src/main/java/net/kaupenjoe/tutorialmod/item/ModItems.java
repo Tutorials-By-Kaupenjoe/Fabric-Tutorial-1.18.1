@@ -68,6 +68,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.GRAPE_VINE, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
 
+    public static final Item KAUPENBOW = registerItem("kaupenbow",
+            new BowItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(640)));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
