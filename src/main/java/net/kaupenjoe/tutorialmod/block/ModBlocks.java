@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.custom.*;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
+import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffects;
@@ -88,7 +89,8 @@ public class ModBlocks {
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
             new MythrilLampBlock(FabricBlockSettings.of(Material.METAL)
                     .strength(4.0f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL);
+                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.MYTHRIL);
 
 
     public static final Block WINTER_WINDOW = registerBlock("winter_window",

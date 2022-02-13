@@ -53,5 +53,7 @@
   "item.tutorialmod.dowsing_rod.tooltip.shift": "Right Click to find valuables",
   "item.tutorialmod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
 
-  "tooltip.tutorialmod.mythril_block": "A Magical Block"
+  "tooltip.tutorialmod.mythril_block": "A Magical Block",
+
+  "tutorialmod.dowsing_rod_found_ore": "Found Ore Sound"
 }
