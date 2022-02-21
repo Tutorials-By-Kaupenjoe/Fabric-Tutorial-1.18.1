@@ -32,6 +32,11 @@ public class ModConfiguredFeatures {
 
     // CF -> CF -> PF -> WORLD GEN
 
+    public static final ConfiguredFeature<RandomPatchFeatureConfig, ?> LILAC_FLOWER =
+            register("lilac_flower", Feature.FLOWER.configure(
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, Feature.SIMPLE_BLOCK.configure
+                            (new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LILAC_FLOWER))).withInAirFilter())));
+
 
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(TutorialMod.MOD_ID, name),

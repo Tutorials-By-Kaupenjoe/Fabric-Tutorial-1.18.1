@@ -5,16 +5,24 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.decorator.BiomePlacementModifier;
+import net.minecraft.world.gen.decorator.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.decorator.SquarePlacementModifier;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> JACARANDA_PLACED_KEY = registerKey("jacaranda_placed");
+    public static final RegistryKey<PlacedFeature> LILAC_PLACED_KEY = registerKey("lilac_placed");
 
     public static final PlacedFeature JACARANDA_PLACED = registerPlacedFeature("jacaranda_placed",
             ModConfiguredFeatures.JACARANDA_FEATURE.withPlacement(VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(1, 0.1f, 2))));
+
+    public static final PlacedFeature LILAC_PLACED = registerPlacedFeature("lilac_placed",
+            ModConfiguredFeatures.LILAC_FLOWER.withPlacement(RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
+                    PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
 
 
 
