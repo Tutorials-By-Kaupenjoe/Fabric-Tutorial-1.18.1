@@ -50,6 +50,12 @@
   "block.tutorialmod.winter_window": "Winter Window",
   "block.tutorialmod.grape_vine": "Grape Vine",
 
+  "block.tutorialmod.jacaranda_log": "Jacaranda Log",
+  "block.tutorialmod.jacaranda_wood": "Jacaranda Wood",
+  "block.tutorialmod.stripped_jacaranda_log": "Stripped Jacaranda Log",
+  "block.tutorialmod.stripped_jacaranda_wood": "Stripped Jacaranda Wood",
+  "block.tutorialmod.jacaranda_planks": "Jacaranda Planks",
+
   "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
 
   "item.tutorialmod.dowsing_rod.no_valuables": "No Valuables Found!",

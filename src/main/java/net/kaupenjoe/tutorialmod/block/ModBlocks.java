@@ -99,6 +99,18 @@ public class ModBlocks {
     public static final Block GRAPE_VINE = registerBlockWithoutBlockItem("grape_vine",
             new GrapeVineBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()), ModItemGroup.MYTHRIL);
 
+    public static final Block JACARANDA_LOG = registerBlock("jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+    public static final Block JACARANDA_WOOD = registerBlock("jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+    public static final Block STRIPPED_JACARANDA_LOG = registerBlock("stripped_jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+    public static final Block STRIPPED_JACARANDA_WOOD = registerBlock("stripped_jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block JACARANDA_PLANKS = registerBlock("jacaranda_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
 
 
 
