@@ -38,6 +38,17 @@ public class ModConfiguredFeatures {
                             (new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LILAC_FLOWER))).withInAirFilter())));
 
 
+    public static final List<OreFeatureConfig.Target> OVERWORLD_MYTHRIL_ORES = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.MYTHRIL_ORE.getDefaultState()),
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_MYTHRIL_ORE.getDefaultState()));
+
+    public static final ConfiguredFeature<?, ?> MYTHRIL_ORE = register("mythril_ore",
+            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_MYTHRIL_ORES, 9)));
+
+
+
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(TutorialMod.MOD_ID, name),
                 configuredFeature);
