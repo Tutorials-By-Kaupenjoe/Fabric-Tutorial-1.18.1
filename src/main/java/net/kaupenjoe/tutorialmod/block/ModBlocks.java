@@ -6,6 +6,7 @@ import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.custom.*;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.kaupenjoe.tutorialmod.sound.ModSounds;
+import net.kaupenjoe.tutorialmod.world.feature.tree.JacarandaSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffects;
@@ -110,6 +111,13 @@ public class ModBlocks {
 
     public static final Block JACARANDA_PLANKS = registerBlock("jacaranda_planks",
             new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block JACARANDA_LEAVES = registerBlock("jacaranda_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
+            new ModSaplingBlock(new JacarandaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.MYTHRIL);
 
 
 
