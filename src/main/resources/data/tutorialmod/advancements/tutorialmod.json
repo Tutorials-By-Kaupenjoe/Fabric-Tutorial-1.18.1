@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "tutorialmod:mythril_ingot"
+    },
+    "title": "Tutorial Mod",
+    "description": "The Power lies in the Mythril!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "tutorialmod:textures/block/mythril_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:mythril_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
