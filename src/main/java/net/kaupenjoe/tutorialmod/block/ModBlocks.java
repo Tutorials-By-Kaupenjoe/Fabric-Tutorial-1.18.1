@@ -6,7 +6,6 @@ import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.custom.*;
 import net.kaupenjoe.tutorialmod.item.ModItemGroup;
 import net.kaupenjoe.tutorialmod.sound.ModSounds;
-import net.kaupenjoe.tutorialmod.world.feature.tree.JacarandaSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffects;
