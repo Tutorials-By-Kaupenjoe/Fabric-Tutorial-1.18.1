@@ -77,6 +77,10 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
 
 
+    public static final Item MYTHRIL_STAFF = registerItem("mythril_staff",
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
