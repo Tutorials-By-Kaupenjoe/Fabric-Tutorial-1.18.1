@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod.util;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
@@ -11,6 +12,10 @@ import net.kaupenjoe.tutorialmod.command.ReturnHomeCommand;
 import net.kaupenjoe.tutorialmod.command.SetHomeCommand;
 import net.kaupenjoe.tutorialmod.event.ModPlayerEventCopyFrom;
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.VillagerProfession;
 
 public class ModRegistries {
     public static void registerModStuffs() {
@@ -19,6 +24,7 @@ public class ModRegistries {
         registerEvents();
         registerStrippables();
         registerFlammableBlock();
+        registerCustomTrades();
     }
 
 
@@ -52,5 +58,23 @@ public class ModRegistries {
 
     private static void registerEvents() {
         ServerPlayerEvents.COPY_FROM.register(new ModPlayerEventCopyFrom());
+    }
+
+    private static void registerCustomTrades() {
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 2),
+                            new ItemStack(ModItems.GRAPE, 12),
+                            6,2,0.02f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 3,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 6),
+                            new ItemStack(ModItems.MYTHRIL_PICKAXE, 1),
+                            12,7,0.08f));
+                });
     }
 }
