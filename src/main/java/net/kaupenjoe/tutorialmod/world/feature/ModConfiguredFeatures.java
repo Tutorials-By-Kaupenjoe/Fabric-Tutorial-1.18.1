@@ -32,6 +32,13 @@ public class ModConfiguredFeatures {
                             JACARANDA_CHECKED));
 
 
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> LILAC_FLOWER =
+            ConfiguredFeatures.register("lilac_flower", Feature.FLOWER,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LILAC_FLOWER)))));
+
+
+
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + TutorialMod.MOD_ID);
     }
