@@ -4,7 +4,8 @@
   "package": "net.kaupenjoe.tutorialmod.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "ModEntityDataSaver"
+    "ModEntityDataSaver",
+    "BrewingRecipeRegistryMixin"
   ],
   "client": [
     "ExampleMixin"
