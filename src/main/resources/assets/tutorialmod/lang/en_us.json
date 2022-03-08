@@ -66,5 +66,6 @@
 
   "tooltip.tutorialmod.mythril_block": "A Magical Block",
 
-  "tutorialmod.dowsing_rod_found_ore": "Found Ore Sound"
+  "tutorialmod.dowsing_rod_found_ore": "Found Ore Sound",
+  "effect.tutorialmod.freeze": "Freeze"
 }

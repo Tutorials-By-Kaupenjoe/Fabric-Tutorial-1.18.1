@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.effect.ModEffects;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.painting.ModPaintings;
 import net.kaupenjoe.tutorialmod.util.ModLootTableModifiers;
@@ -28,6 +29,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModWorldGen.generateModWorldGen();
 		ModLootTableModifiers.modifyLootTables();
+
+		ModEffects.registerEffects();
 
 	}
 }
