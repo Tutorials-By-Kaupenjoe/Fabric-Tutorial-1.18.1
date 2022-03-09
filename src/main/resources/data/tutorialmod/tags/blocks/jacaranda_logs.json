@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:jacaranda_log",
+    "tutorialmod:jacaranda_wood",
+    "tutorialmod:stripped_jacaranda_log",
+    "tutorialmod:stripped_jacaranda_wood"
+  ]
+}
