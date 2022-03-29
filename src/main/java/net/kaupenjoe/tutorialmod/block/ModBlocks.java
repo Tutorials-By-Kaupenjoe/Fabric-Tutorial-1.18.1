@@ -121,6 +121,9 @@ public class ModBlocks {
             new ModSaplingBlock(new JacarandaSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.MYTHRIL);
 
+    public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
+            new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.MYTHRIL);
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);
