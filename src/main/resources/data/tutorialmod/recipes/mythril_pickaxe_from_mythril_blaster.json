@@ -1,0 +1,14 @@
+{
+  "type": "tutorialmod:mythril_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "tutorialmod:mythril_ingot"
+    }
+  ],
+  "output": {
+    "item": "tutorialmod:mythril_pickaxe"
+  }
+}
