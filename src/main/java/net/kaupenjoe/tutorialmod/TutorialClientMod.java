@@ -2,7 +2,10 @@ package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
+import net.kaupenjoe.tutorialmod.screen.MythrilBlasterScreen;
 import net.kaupenjoe.tutorialmod.util.ModModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 
@@ -24,5 +27,7 @@ public class TutorialClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYTHRIL_BLASTER, RenderLayer.getCutout());
 
         ModModelPredicateProvider.registerModModels();
+
+        ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
     }
 }

@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.block.entity.ModBlockEntities;
 import net.kaupenjoe.tutorialmod.effect.ModEffects;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.painting.ModPaintings;
@@ -33,6 +34,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
+		ModBlockEntities.registerAllBlockEntities();
 
 	}
 }
