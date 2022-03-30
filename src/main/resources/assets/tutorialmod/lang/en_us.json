@@ -77,5 +77,6 @@
   "tooltip.tutorialmod.mythril_block": "A Magical Block",
 
   "tutorialmod.dowsing_rod_found_ore": "Found Ore Sound",
-  "effect.tutorialmod.freeze": "Freeze"
+  "effect.tutorialmod.freeze": "Freeze",
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker"
 }
