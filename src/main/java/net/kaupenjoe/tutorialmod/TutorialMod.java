@@ -6,6 +6,7 @@ import net.kaupenjoe.tutorialmod.block.entity.ModBlockEntities;
 import net.kaupenjoe.tutorialmod.effect.ModEffects;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.painting.ModPaintings;
+import net.kaupenjoe.tutorialmod.particle.ModParticles;
 import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
 import net.kaupenjoe.tutorialmod.util.ModLootTableModifiers;
@@ -38,6 +39,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
+
+		ModParticles.registerParticles();
 
 	}
 }
