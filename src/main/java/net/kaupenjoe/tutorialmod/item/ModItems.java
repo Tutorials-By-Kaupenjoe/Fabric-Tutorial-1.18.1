@@ -80,6 +80,10 @@ public class ModItems {
     public static final Item MYTHRIL_STAFF = registerItem("mythril_staff",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
 
+    public static final Item JACARANDA_SIGN = registerItem("jacaranda_sign",
+            new SignItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(16),
+                    ModBlocks.JACARANDA_SIGN_BLOCK, ModBlocks.JACARANDA_WALL_SIGN_BLOCK));
+
 
 
     private static Item registerItem(String name, Item item) {
