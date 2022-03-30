@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.fluid.ModFluids;
 import net.kaupenjoe.tutorialmod.item.custom.*;
 import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.minecraft.entity.EquipmentSlot;
@@ -83,6 +84,9 @@ public class ModItems {
     public static final Item JACARANDA_SIGN = registerItem("jacaranda_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(16),
                     ModBlocks.JACARANDA_SIGN_BLOCK, ModBlocks.JACARANDA_WALL_SIGN_BLOCK));
+
+    public static final Item HONEY_BUCKET = registerItem("honey_bucket",
+            new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
 
 
 
