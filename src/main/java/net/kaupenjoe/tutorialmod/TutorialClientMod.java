@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.entity.client.RaccoonRenderer;
 import net.kaupenjoe.tutorialmod.fluid.ModFluids;
 import net.kaupenjoe.tutorialmod.particle.ModParticles;
 import net.kaupenjoe.tutorialmod.particle.custom.CitrineParticle;
@@ -47,6 +50,7 @@ public class TutorialClientMod implements ClientModInitializer {
                         SimpleFluidRenderHandler.WATER_FLOWING,
                         SimpleFluidRenderHandler.WATER_OVERLAY, 0xe9860c));
 
+        EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
 
     }
 }

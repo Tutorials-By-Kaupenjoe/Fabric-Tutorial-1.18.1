@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod.util;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -10,6 +11,8 @@ import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.command.ReturnHomeCommand;
 import net.kaupenjoe.tutorialmod.command.SetHomeCommand;
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.entity.custom.RaccoonEntity;
 import net.kaupenjoe.tutorialmod.event.ModPlayerEventCopyFrom;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.minecraft.item.ItemStack;
@@ -25,6 +28,7 @@ public class ModRegistries {
         registerStrippables();
         registerFlammableBlock();
         registerCustomTrades();
+        registerAttributes();
     }
 
 
@@ -76,5 +80,9 @@ public class ModRegistries {
                             new ItemStack(ModItems.MYTHRIL_PICKAXE, 1),
                             12,7,0.08f));
                 });
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.RACCOON, RaccoonEntity.setAttributes());
     }
 }

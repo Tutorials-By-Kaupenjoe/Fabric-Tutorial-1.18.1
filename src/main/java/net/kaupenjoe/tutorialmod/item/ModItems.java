@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
 import net.kaupenjoe.tutorialmod.fluid.ModFluids;
 import net.kaupenjoe.tutorialmod.item.custom.*;
 import net.kaupenjoe.tutorialmod.sound.ModSounds;
@@ -87,6 +88,11 @@ public class ModItems {
 
     public static final Item HONEY_BUCKET = registerItem("honey_bucket",
             new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
+
+
+    public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",
+            new SpawnEggItem(ModEntities.RACCOON,0x948e8d, 0x3b3635,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxCount(1)));
 
 
 
