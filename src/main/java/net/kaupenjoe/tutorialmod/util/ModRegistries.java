@@ -15,6 +15,7 @@ import net.kaupenjoe.tutorialmod.entity.ModEntities;
 import net.kaupenjoe.tutorialmod.entity.custom.RaccoonEntity;
 import net.kaupenjoe.tutorialmod.event.ModPlayerEventCopyFrom;
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kaupenjoe.tutorialmod.villager.ModVillagers;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
@@ -78,6 +79,38 @@ public class ModRegistries {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 6),
                             new ItemStack(ModItems.MYTHRIL_PICKAXE, 1),
+                            12,7,0.08f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.BLAST_MASTER,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 6),
+                            new ItemStack(ModItems.MYTHRIL_PICKAXE, 1),
+                            12,7,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 12),
+                            new ItemStack(ModItems.MYTHRIL_BOOTS, 1),
+                            12,7,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 26),
+                            new ItemStack(ModItems.MYTHRIL_CHESTPLATE, 1),
+                            12,7,0.08f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.BLAST_MASTER,2,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 64),
+                            new ItemStack(ModItems.MYTHRIL_HOE, 1),
+                            12,7,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 5),
+                            new ItemStack(ModItems.MYTHRIL_INGOT, 1),
+                            12,7,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 50),
+                            new ItemStack(ModItems.KAUPENBOW, 1),
                             12,7,0.08f));
                 });
     }

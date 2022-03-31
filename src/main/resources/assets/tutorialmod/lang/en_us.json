@@ -80,5 +80,7 @@
 
   "tutorialmod.dowsing_rod_found_ore": "Found Ore Sound",
   "effect.tutorialmod.freeze": "Freeze",
-  "enchantment.tutorialmod.lightning_striker": "Lightning Striker"
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+
+  "entity.minecraft.villager.blastmaster": "Blastmaster"
 }
