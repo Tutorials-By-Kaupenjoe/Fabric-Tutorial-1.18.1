@@ -1,5 +1,7 @@
 package net.kaupenjoe.tutorialmod.entity.custom;
 
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -44,7 +46,12 @@ public class RaccoonEntity extends TameableEntity implements IAnimatable {
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return null;
+        return ModEntities.RACCOON.create(world);
+    }
+
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return stack.getItem() == ModItems.GRAPE;
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
@@ -62,6 +69,8 @@ public class RaccoonEntity extends TameableEntity implements IAnimatable {
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
         this.goalSelector.add(4, new LookAroundGoal(this));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+
+        this.targetSelector.add(1, new AnimalMateGoal(this, 1.0));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
@@ -120,6 +129,10 @@ public class RaccoonEntity extends TameableEntity implements IAnimatable {
         Item item = itemstack.getItem();
 
         Item itemForTaming = Items.APPLE;
+
+        if(isBreedingItem(itemstack)) {
+            return super.interactMob(player, hand);
+        }
 
         if (item == itemForTaming && !isTamed()) {
             if (this.world.isClient()) {
