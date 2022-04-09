@@ -41,6 +41,9 @@ public class ModBlocks {
     public static final Block NETHERRACK_MYTHRIL_ORE = registerBlock("netherrack_mythril_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 
+    public static final Block END_MYTHRIL_ORE = registerBlock("end_mythril_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 

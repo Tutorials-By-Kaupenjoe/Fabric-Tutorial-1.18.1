@@ -23,5 +23,13 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.MYTHRIL_ORE, ModOreFeatures.modifiersWithCount(7,
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
 
+    public static final RegistryEntry<PlacedFeature> NETHER_MYTHRIL_ORE_PLACED = PlacedFeatures.register("nether_mythril_ore_placed",
+            ModConfiguredFeatures.NETHER_MYTHRIL_ORE, ModOreFeatures.modifiersWithCount(10,
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
+
+    public static final RegistryEntry<PlacedFeature> END_MYTHRIL_ORE_PLACED = PlacedFeatures.register("end_mythril_ore_placed",
+            ModConfiguredFeatures.END_MYTHRIL_ORE, ModOreFeatures.modifiersWithCount(10,
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
+
 
 }
