@@ -15,6 +15,7 @@ import net.kaupenjoe.tutorialmod.util.ModRegistries;
 import net.kaupenjoe.tutorialmod.villager.ModVillagers;
 import net.kaupenjoe.tutorialmod.world.feature.ModConfiguredFeatures;
 import net.kaupenjoe.tutorialmod.world.gen.ModWorldGen;
+import net.kaupenjoe.tutorialmod.world.structure.ModStructures;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -46,5 +47,6 @@ public class TutorialMod implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 
 		ModVillagers.setupPOIs();
+		ModStructures.registerStructureFeatures();
 	}
 }
