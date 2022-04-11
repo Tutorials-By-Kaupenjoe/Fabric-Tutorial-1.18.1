@@ -49,16 +49,16 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
     public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
-            new ModArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
     public static final Item MAGIC_MYTHRIL_DUST = registerItem("magic_mythril_dust",
