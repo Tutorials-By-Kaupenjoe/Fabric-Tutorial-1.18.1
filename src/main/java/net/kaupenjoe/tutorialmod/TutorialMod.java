@@ -17,6 +17,7 @@ import net.kaupenjoe.tutorialmod.world.feature.ModConfiguredFeatures;
 import net.kaupenjoe.tutorialmod.world.gen.ModWorldGen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
@@ -46,6 +47,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModParticles.registerParticles();
 		ModEnchantments.registerModEnchantments();
+
+		GeckoLib.initialize();
 
 	}
 }
