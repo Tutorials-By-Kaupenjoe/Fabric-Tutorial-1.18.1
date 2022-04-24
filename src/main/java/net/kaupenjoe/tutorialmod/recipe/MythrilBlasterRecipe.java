@@ -21,9 +21,11 @@ public class MythrilBlasterRecipe implements Recipe<SimpleInventory> {
         this.output = output;
         this.recipeItems = recipeItems;
     }
-
+    
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
+        if(world.isClient()) { return false; }
+
         if(recipeItems.get(0).test(inventory.getStack(1))) {
             return recipeItems.get(1).test(inventory.getStack(2));
         }
