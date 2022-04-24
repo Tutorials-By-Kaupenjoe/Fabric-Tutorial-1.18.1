@@ -10,6 +10,7 @@ import net.kaupenjoe.tutorialmod.painting.ModPaintings;
 import net.kaupenjoe.tutorialmod.particle.ModParticles;
 import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
+import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
 import net.kaupenjoe.tutorialmod.util.ModLootTableModifiers;
 import net.kaupenjoe.tutorialmod.util.ModRegistries;
 import net.kaupenjoe.tutorialmod.villager.ModVillagers;
@@ -17,6 +18,7 @@ import net.kaupenjoe.tutorialmod.world.feature.ModConfiguredFeatures;
 import net.kaupenjoe.tutorialmod.world.gen.ModWorldGen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
@@ -42,8 +44,12 @@ public class TutorialMod implements ModInitializer {
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
 
+		ModScreenHandlers.registerAllScreenHandlers();
+
 		ModParticles.registerParticles();
 		ModEnchantments.registerModEnchantments();
+
+		GeckoLib.initialize();
 
 		ModVillagers.setupPOIs();
 	}
