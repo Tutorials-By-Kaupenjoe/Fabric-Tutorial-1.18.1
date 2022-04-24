@@ -9,6 +9,7 @@ import net.kaupenjoe.tutorialmod.painting.ModPaintings;
 import net.kaupenjoe.tutorialmod.particle.ModParticles;
 import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
+import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
 import net.kaupenjoe.tutorialmod.util.ModLootTableModifiers;
 import net.kaupenjoe.tutorialmod.util.ModRegistries;
 import net.kaupenjoe.tutorialmod.world.feature.ModConfiguredFeatures;
@@ -39,6 +40,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 
 		ModParticles.registerParticles();
 
