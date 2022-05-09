@@ -14,6 +14,7 @@ import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
 import net.kaupenjoe.tutorialmod.util.ModLootTableModifiers;
 import net.kaupenjoe.tutorialmod.util.ModRegistries;
 import net.kaupenjoe.tutorialmod.villager.ModVillagers;
+import net.kaupenjoe.tutorialmod.world.dimension.ModDimensions;
 import net.kaupenjoe.tutorialmod.world.feature.ModConfiguredFeatures;
 import net.kaupenjoe.tutorialmod.world.gen.ModWorldGen;
 import net.kaupenjoe.tutorialmod.world.structure.ModStructures;
@@ -54,5 +55,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModVillagers.setupPOIs();
 		ModStructures.registerStructureFeatures();
+
+		ModDimensions.register();
 	}
 }
