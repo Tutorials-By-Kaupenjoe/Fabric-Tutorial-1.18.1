@@ -3,3 +3,9 @@ https://www.curseforge.com/minecraft/mc-mods/sweet-not-savoury
 
 distributed under CC BY-SA 4.0 International License:
 https://creativecommons.org/licenses/by-sa/4.0/
+
+Custom Portal API from:
+https://github.com/kyrptonaught/customportalapi
+
+Custom Signs from:
+https://github.com/nyuppo/fabric-sign-example

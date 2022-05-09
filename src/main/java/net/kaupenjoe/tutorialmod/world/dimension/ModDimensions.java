@@ -1,6 +1,9 @@
 package net.kaupenjoe.tutorialmod.world.dimension;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -16,5 +19,13 @@ public class ModDimensions {
 
     public static void register() {
         TutorialMod.LOGGER.debug("Registering ModDimensions for " + TutorialMod.MOD_ID);
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(Blocks.GLOWSTONE)
+                .destDimID(KJDIM_DIMENSION_KEY.getValue())
+                .tintColor(45, 79, 195)
+                .lightWithItem(ModItems.MYTHRIL_STAFF)
+                .onlyLightInOverworld()
+                .registerPortal();
     }
 }
