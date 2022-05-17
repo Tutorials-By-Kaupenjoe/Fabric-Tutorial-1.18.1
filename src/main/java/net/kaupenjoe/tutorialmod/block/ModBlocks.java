@@ -141,6 +141,10 @@ public class ModBlocks {
                     .noCollision().nonOpaque().dropsNothing()), ModItemGroup.MYTHRIL);
 
 
+    public static final Block ANIMATED_BLOCK = registerBlockWithoutBlockItem("animated_block",
+            new AnimatedBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.MYTHRIL);
+
+
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);
         return Registry.register(Registry.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
