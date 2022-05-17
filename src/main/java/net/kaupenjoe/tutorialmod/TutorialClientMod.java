@@ -13,6 +13,7 @@ import net.kaupenjoe.tutorialmod.entity.client.RaccoonRenderer;
 import net.kaupenjoe.tutorialmod.entity.client.armor.MythrilArmorRenderer;
 import net.kaupenjoe.tutorialmod.fluid.ModFluids;
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kaupenjoe.tutorialmod.item.client.AnimatedItemRenderer;
 import net.kaupenjoe.tutorialmod.particle.ModParticles;
 import net.kaupenjoe.tutorialmod.particle.custom.CitrineParticle;
 import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
@@ -20,6 +21,7 @@ import net.kaupenjoe.tutorialmod.screen.MythrilBlasterScreen;
 import net.kaupenjoe.tutorialmod.util.ModModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
+import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
 public class TutorialClientMod implements ClientModInitializer {
     @Override
@@ -57,5 +59,7 @@ public class TutorialClientMod implements ClientModInitializer {
 
         GeoArmorRenderer.registerArmorRenderer(new MythrilArmorRenderer(), ModItems.MYTHRIL_BOOTS,
                 ModItems.MYTHRIL_LEGGINGS, ModItems.MYTHRIL_CHESTPLATE, ModItems.MYTHRIL_HELMET);
+
+        GeoItemRenderer.registerItemRenderer(ModItems.ANIMATED_ITEM, new AnimatedItemRenderer());
     }
 }
