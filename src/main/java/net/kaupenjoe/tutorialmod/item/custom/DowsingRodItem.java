@@ -6,6 +6,7 @@ import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.kaupenjoe.tutorialmod.util.InventoryUtil;
 import net.kaupenjoe.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -39,14 +40,14 @@ public class DowsingRodItem extends Item {
             boolean foundBlock = false;
 
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
-                Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
+                BlockState blockBelow = context.getWorld().getBlockState(positionClicked.down(i));
 
                 if(isValuableBlock(blockBelow)) {
-                    outputValuableCoordinates(positionClicked.down(i), player, blockBelow);
+                    outputValuableCoordinates(positionClicked.down(i), player, blockBelow.getBlock());
                     foundBlock = true;
 
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)) {
-                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
+                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow.getBlock());
                     }
 
                     spawnFoundParticles(context, positionClicked);
@@ -104,7 +105,7 @@ public class DowsingRodItem extends Item {
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
     }
 
-    private boolean isValuableBlock(Block block) {
-        return Registry.BLOCK.getOrCreateEntry(Registry.BLOCK.getKey(block).get()).isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
+    private boolean isValuableBlock(BlockState state) {
+        return state.isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
     }
 }

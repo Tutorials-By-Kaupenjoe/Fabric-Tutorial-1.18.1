@@ -74,6 +74,12 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+        for (ItemStack armorStack: player.getInventory().armor) {
+            if(!(armorStack.getItem() instanceof ArmorItem)) {
+                return false;
+            }
+        }
+
         ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
