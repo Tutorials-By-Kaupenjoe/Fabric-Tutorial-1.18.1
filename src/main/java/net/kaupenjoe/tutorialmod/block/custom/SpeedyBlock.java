@@ -4,11 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -28,9 +27,9 @@ public class SpeedyBlock extends Block {
         // 2 Times on the Client (for each Hand)
         if(world.isClient()) {
             if(hand == Hand.MAIN_HAND) {
-                player.sendMessage(new LiteralText("CLIENT: This is THE CLIENT! MAIN HAND!"), false);
+                player.sendMessage(Text.literal("CLIENT: This is THE CLIENT! MAIN HAND!"), false);
             } else {
-                player.sendMessage(new LiteralText("CLIENT: This is THE CLIENT! OFF HAND!"), false);
+                player.sendMessage(Text.literal("CLIENT: This is THE CLIENT! OFF HAND!"), false);
             }
         }
 

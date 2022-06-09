@@ -5,7 +5,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -37,7 +36,7 @@ public class DataTabletItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(stack.hasNbt()) {
             String currentOre = stack.getNbt().getString("tutorialmod.last_ore");
-            tooltip.add(new LiteralText(currentOre));
+            tooltip.add(Text.literal(currentOre));
         }
     }
 }

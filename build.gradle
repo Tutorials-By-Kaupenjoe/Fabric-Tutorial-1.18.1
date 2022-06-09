@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.10-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -30,10 +30,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.18:3.0.35'
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.0'
 
-	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
-	include 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta51-1.19'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta51-1.19'
 }
 
 processResources {

@@ -7,17 +7,17 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class AnimatedItemModel extends AnimatedGeoModel<AnimatedItem> {
     @Override
-    public Identifier getModelLocation(AnimatedItem object) {
+    public Identifier getModelResource(AnimatedItem object) {
         return new Identifier(TutorialMod.MOD_ID, "geo/animated_item.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(AnimatedItem object) {
+    public Identifier getTextureResource(AnimatedItem object) {
         return new Identifier(TutorialMod.MOD_ID, "textures/item/animated_item_texture.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(AnimatedItem animatable) {
+    public Identifier getAnimationResource(AnimatedItem animatable) {
         return new Identifier(TutorialMod.MOD_ID, "animations/animated_item.animation.json");
     }
 }

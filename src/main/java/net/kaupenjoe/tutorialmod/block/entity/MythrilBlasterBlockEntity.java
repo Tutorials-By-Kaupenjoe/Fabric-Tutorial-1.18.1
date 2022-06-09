@@ -1,24 +1,20 @@
 package net.kaupenjoe.tutorialmod.block.entity;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.item.inventory.ImplementedInventory;
 import net.kaupenjoe.tutorialmod.recipe.MythrilBlasterRecipe;
 import net.kaupenjoe.tutorialmod.screen.MythrilBlasterScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -72,7 +68,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
 
     @Override
     public Text getDisplayName() {
-        return new LiteralText("Mythril Blaster");
+        return Text.literal("Mythril Blaster");
     }
 
     @Nullable

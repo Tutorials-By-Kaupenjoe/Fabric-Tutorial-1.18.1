@@ -53,7 +53,6 @@ public class TutorialMod implements ModInitializer {
 
 		GeckoLib.initialize();
 
-		ModVillagers.setupPOIs();
 		ModStructures.registerStructureFeatures();
 
 		ModDimensions.register();
